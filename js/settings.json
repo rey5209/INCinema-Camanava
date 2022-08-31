@@ -1,0 +1,28 @@
+{
+  "copyrigth":"© Google Team, Inc - All Rights Reserved",
+  "copyRightSite":"2022",
+  "copyRightLink":"https://opensource.google/",
+  "social":[
+    {
+      "icon" : "facebook-f",
+      "link" : "https://www.facebook.com/IglesiaNiCristoChristianFamilyOrganizations/"
+    },
+    {
+      "icon" : "youtube",
+      "link" : "https://www.youtube.com/channel/UCC8sp7RALoGGsYrgklPJJOg/"
+    },
+    {
+      "icon" : "twitter",
+      "link" : "https://twitter.com/INC_CFO/"
+    },
+    {
+      "icon" : "telegram",
+      "link" : "https://t.me/INC_CFO/"
+    },
+    {
+      "icon" : "instagram",
+      "link" : "https://www.instagram.com/INC_CFO/"
+    }
+  ]
+}
+

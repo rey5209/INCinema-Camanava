@@ -1,0 +1,94 @@
+{
+  "jsonData" : [
+    {
+    "banner" : "INCMV_Awards_2022_and_CFO_Vision_2022_cropped.gif",
+    "tittle" : "INCinema | Camanava | 2022 ",
+    "subTittle" : "",
+    "subTittleColor" : "red",
+    "subTittleType" : "text",
+    "image" : "INC-Central-Temple-2.jpg",
+    "link" : "https://www.youtube.com", 
+    "different_link_per_data" : false,
+    "different_img_per_data" : true,
+    "redirectPage": true,
+    "page" : "watch2",
+    "single_gtag":"",
+    "single_gtag_id" :"",    
+    "allow_popup_option":true,
+    "popup_option":[  
+      { 
+        "page" : "watch2.html", 
+        "subTittle" : "Youtube",
+        "subTittleIcon" : "youtube",
+        "subTittleColor" : "red",
+        "subTittleType" : "icon",
+        "redirect_text":"Sending view from youtube",
+        "link" : "https://youtu.be/yA5kpXCJgJg?t=1",
+        "gtag":"https://www.googletagmanager.com/gtag/js?id=G-4JS2KPP86V",
+        "gtag_id" :"G-4JS2KPP86V"  
+      },
+      { 
+        "page" : "watch.html", 
+        "subTittle" : "Views",
+        "subTittleIcon" : "react",
+        "subTittleColor" : "#1892b8",
+        "subTittleType" : "icon",
+        "redirect_text":"Sending view from facebook",
+        "link" : "index.html",
+        "gtag":"",
+        "gtag_id" :""  
+      }
+
+    ],
+
+    "redirect_text":"Sending view from facebook",
+    "first_header_color":"#fff",
+    "first_header_title":"Local",
+    "viewData" : [
+       
+      {"lokal":"Bagbaguin",            "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                         },
+      {"lokal":"Balintawak",           "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       },
+      {"lokal":"Caloocan",             "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                         },
+      {"lokal":"Catmon",               "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0               },
+      {"lokal":"Gen. T. de Leon",      "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                        },
+      {"lokal":"Gracepark",            "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       },
+      {"lokal":"Kalandang",            "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                },
+      {"lokal":"Karuhatan",            "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                        },
+      {"lokal":"Kaunlaran",            "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0            }, 
+      {"lokal":"Kaunlaran 1",          "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                }, 
+      {"lokal":"Kaunlaran 3",          "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                              }, 
+      {"lokal":"Kawal",                "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                             }, 
+      {"lokal":"Letre",                "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                      }, 
+      {"lokal":"Lingunan",             "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       }, 
+      {"lokal":"M.H. del Pilar",       "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                                }, 
+      {"lokal":"Malabon",              "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                     }, 
+      {"lokal":"Malinta",              "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                      }, 
+      {"lokal":"Mapulang Lupa",        "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                      }, 
+      {"lokal":"Maysan",               "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                      }, 
+      {"lokal":"Naval",                "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                          }, 
+      {"lokal":"Navotas",              "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       }, 
+      {"lokal":"North Diversion",      "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                             }, 
+      {"lokal":"Panghulo",             "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                                 }, 
+      {"lokal":"Parada",               "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       }, 
+      {"lokal":"Polo",                 "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                         }, 
+      {"lokal":"Sangandaan",           "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                             }, 
+      {"lokal":"Skyline",              "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0               }, 
+      {"lokal":"Sta. Quiteria",        "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       }, 
+      {"lokal":"Tandang Sora",         "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       }, 
+      {"lokal":"Tangos",               "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                                           }, 
+      {"lokal":"Tinajeros",            "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                       }, 
+      {"lokal":"Valenzuela",           "duration":"40:0",  "link":"", "image":"22.jpg",        "views":  0                                }, 
+  
+      
+      {"lokal":" ",         "divider":false , "divider_title":"Top Viewer", "color":"#38e884" , "bg":"#232129"},
+        
+      {"lokal":"",         "duration":"25:0",  "link":"", "image":"22.jpg",        "views":  0}
+      
+      ] 
+    } 
+      
+
+  ]
+}
+
+ 

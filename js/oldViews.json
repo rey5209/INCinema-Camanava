@@ -1,0 +1,86 @@
+{
+    "jsonData" : [
+      {
+      "banner" : "ezgif.com-gif-maker.gif",
+      "tittle" : "TODAY | Season 2 | June 22, 2022 ",
+      "subTittle" : "youtube",
+      "subTittleColor" : "red",
+      "subTittleType" : "icon",
+      "image" : "INC-Central-Temple-2.jpg",
+      "link" : "https://www.youtube.com/watch?v=oNJeWvAy2ow", 
+      "different_link_per_data" : false,
+      "different_img_per_data" : true,
+      "redirectPage": true,
+      "page" : "watch2", 
+      "allow_popup_option":true,
+      "popup_option":[  
+        { 
+          "page" : "watch2", 
+          "subTittle" : "",
+          "subTittleIcon" : "youtube",
+          "subTittleColor" : "red",
+          "subTittleType" : "icon",
+          "link" : "https://www.youtube.com/watch?v=oNJeWvAy2ow"
+        },
+        { 
+          "page" : "watch", 
+          "subTittle" : "",
+          "subTittleIcon" : "facebook",
+          "subTittleColor" : "#1c4ee3",
+          "subTittleType" : "icon",
+          "link" : "https://www.facebook.com/events/445572446942321/"
+        }
+  
+      ],
+  
+      "redirect_text":"Sending view from facebook",
+      "first_header_color":"#000",
+      "first_header_title":"Featured Districts",
+      "viewData" : [
+         
+        {"lokal":"Maynila",             "duration":"25:0",  "link":"https://www.facebook.com/events/3076896365959099/", "image":"33.jpg",        "views":  0},
+        {"lokal":"Benguet",                           "duration":"25:0",  "link":"https://www.facebook.com/events/3076896365959099/", "image":"33.jpg",        "views":  0},
+        {"lokal":"Northern Samar",      "duration":"25:0",  "link":"https://www.facebook.com/events/3076896365959099/", "image":"33.jpg",        "views":  0},
+    
+        
+        {"lokal":" ",         "divider":true , "divider_title":"CFO Vision", "color":"#42d4f5",      "duration":"25:0",  "link":"https://www.facebook.com/events/3076896365959099/", "image":"33.jpg",        "views":  0},
+          
+        {"lokal":"Metro Manila East",             "duration":"25:0",  "link":"https://www.facebook.com/events/3076896365959099/", "image":"33.jpg",        "views":  0}
+        
+        ] 
+      },
+      {
+      "banner" : "ezgif.com-gif-maker.gif",
+        "tittle" : "TODAY | Season 2 | June 22, 2022 ",
+        "subTittle" : "facebook",
+      "subTittleColor" : "#1c4ee3",
+      "subTittleType" : "icon",
+        "image" : "Untitled.jpg",
+        "link" : "https://www.facebook.com/events/445572446942321/", 
+        "different_link_per_data" : false,
+        "different_img_per_data" : true,
+        "redirectPage": true,
+        "page" : "watch",
+        "allow_popup_option":false,
+        "redirect_text":"Sending view from youtube",
+          "first_header_color":"#000",
+          "first_header_title":"Featured Districts",
+        "viewData" : [
+          {"lokal":"Maynila",   "duration":"25:0",  "link":"https://www.youtube.com/watch?v=oNJeWvAy2ow",  "image":"33.jpg",                  "views":  0},
+          {"lokal":"Benguet",                               "duration":"25:0",  "link":"https://www.youtube.com/watch?v=oNJeWvAy2ow",  "image":"33.jpg",                  "views":  0},
+          {"lokal":"Northern Samar",            "duration":"25:0",  "link":"https://www.youtube.com/watch?v=oNJeWvAy2ow",  "image":"33.jpg",                  "views":  0},
+            
+             
+          {"lokal":" ",         "divider":true , "divider_title":"CFO Vision", "color":"#42d4f5",      "duration":"25:0",  "link":"https://www.youtube.com/watch?v=oNJeWvAy2ow", "image":"33.jpg",        "views":  0},
+            
+          {"lokal":"Metro Manila East",             "duration":"25:0",  "link":"https://www.youtube.com/watch?v=oNJeWvAy2ow", "image":"33.jpg",        "views":  0}
+            
+          ] 
+        }
+        
+  
+    ]
+  }
+  
+   
+  
