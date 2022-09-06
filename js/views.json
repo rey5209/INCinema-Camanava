@@ -23,7 +23,7 @@
         "subTittleColor" : "red",
         "subTittleType" : "icon",
         "redirect_text":"Sending view from youtube",
-        "link" : "",
+        "link" : "https://www.youtube.com/watch?v=hnrLFGP2LMQ",
         "gtag":"https://www.googletagmanager.com/gtag/js?id=G-4JS2KPP86V",
         "gtag_id" :"G-4JS2KPP86V"  
       },
