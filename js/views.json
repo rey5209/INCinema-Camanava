@@ -12,7 +12,7 @@
     "different_link_per_data" : false,
     "different_img_per_data" : false,
     "viewData" : [
-      {"lokal":"Bagbaguin",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                         },
+      {"lokal":"Bagbaguin",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1                         },
       {"lokal":"Balintawak",           "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                       },
       {"lokal":"Caloocan",             "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                         },
       {"lokal":"Catmon",               "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1               },
