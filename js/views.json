@@ -14,7 +14,7 @@
     "viewData" : [
       {"lokal":"Bagbaguin",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  2                         },
       {"lokal":"Balintawak",           "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                       },
-      {"lokal":"Caloocan",             "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1                         },
+      {"lokal":"Caloocan",             "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  4                         },
       {"lokal":"Catmon",               "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1               },
       {"lokal":"Gen. T. De Leon",      "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  8                        },
       {"lokal":"Gracepark",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                       },
@@ -39,8 +39,8 @@
       {"lokal":"Polo",                 "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                         }, 
       {"lokal":"Sangandaan",           "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                             }, 
       {"lokal":"Skyline",              "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1               }, 
-      {"lokal":"Sta. Quiteria",        "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  2                       }, 
-      {"lokal":"Tandang Sora",         "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                       }, 
+      {"lokal":"Sta. Quiteria",        "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  3                       }, 
+      {"lokal":"Tandang Sora",         "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  4                       }, 
       {"lokal":"Tangos",               "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                                           }, 
       {"lokal":"Tinajeros",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1                       }, 
       {"lokal":"Valenzuela",           "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  3                                }
