@@ -14,11 +14,11 @@
     "viewData" : [
       {"lokal":"Bagbaguin",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  2                         },
       {"lokal":"Balintawak",           "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                       },
-      {"lokal":"Caloocan",             "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                         },
+      {"lokal":"Caloocan",             "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1                         },
       {"lokal":"Catmon",               "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1               },
       {"lokal":"Gen. T. De Leon",      "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  5                        },
       {"lokal":"Gracepark",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                       },
-      {"lokal":"Kalandang",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1                },
+      {"lokal":"Kalandang",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  3                },
       {"lokal":"Karuhatan",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  1                        },
       {"lokal":"Kaunlaran",            "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0            }, 
       {"lokal":"Kaunlaran 1",          "duration":"20:0",  "link":"", "image":"22.jpg",        "views":  0                }, 
