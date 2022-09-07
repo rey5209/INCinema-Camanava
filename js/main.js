@@ -53,7 +53,7 @@ $(document).ready(function() {
         '    <thead>'+
         '      <tr > '+
         '        <th  class="lokals-item d-flex justify-content-between align-items-center"> '+
-        '          <div class="p-2 bd-highlight  ">District</div> '+
+        '          <div class="p-2 bd-highlight  ">Lokal</div> '+
         '          <div class="p-2 bd-highlight   ">Views</div>'+
         '        </th> '+
         '      </tr>'+
