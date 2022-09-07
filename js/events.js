@@ -1,4 +1,92 @@
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyA35D1SwQdAPOAp-wxRYsezWQI7rvIPQAY",
+  authDomain: "counting-system.firebaseapp.com",
+  projectId: "counting-system",
+  storageBucket: "counting-system.appspot.com",
+  messagingSenderId: "726733968843",
+  appId: "1:726733968843:web:d68da6c09a4a1aac7fd24e",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+import {
+  getDatabase,
+  ref,
+  onValue,
+  get,
+  set,
+  child,
+  update,
+  remove,
+} from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
+
+const db = getDatabase();
+
+// get current date
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear(); 
+today =yyyy +'-' + mm + '-' + dd  ;  
+var date = today //data will be separated by day
+ 
+// Reinitialize data
+var arr =[
+    "BAGBAGUIN"   ,
+    "BALINTAWAK"   ,
+    "CALOOCAN"   ,
+    "CATMON"   ,
+    "GEN. T. DE LEON"   ,
+    "GRACEPARK"   ,
+    "KALANDANG",
+    "KARUHATAN"   ,
+    "KAUNLARAN"   ,
+    "KAUNLARAN 1"   ,
+    "KAUNLARAN 3"   ,
+    "KAWAL"   ,
+    "LETRE"   ,
+    "LINGUNAN"   ,
+    "M.H. DEL PILAR"   ,
+    "MALABON"   ,
+    "MALINTA"   ,
+    "MAPULANG LUPA"   ,
+    "MAYSAN"   ,
+    "NAVAL"   ,
+    "NAVOTAS"   ,
+    "NORTH DIVERSION"   ,
+    "PANGHULO"   ,
+    "PARADA"   ,
+    "POLO"   ,
+    "SANGANDAAN"   ,
+    "SKYLINE"   ,
+    "STA. QUITERIA"   ,
+    "TANDANG SORA"   ,
+    "TANGOS"   ,
+    "TINAJEROS"   ,
+    "VALENZUELA"  
+    ]
+
+    var arrNonValidPath = [
+        {"type":".", "replace":"DOT"},
+        {"type":"#", "replace":"HASH_SIGN"},
+        {"type":"$", "replace":"DOLLAR_SIGN"},
+        {"type":"[", "replace":"OPEN_BRACKET"},
+        {"type":"]", "replace":"CLOSE_BRACKET"},
+        {"type":" ", "replace":"_"} 
+    ]
+
+ 
+
+
 $(document).ready(function() {
   // var urlString = location.search;
   var urlParams = parseURLParams(location.search);
@@ -7,7 +95,7 @@ $(document).ready(function() {
   var different_link = false;
   var different_img = false;
 
-  $redirect_txt = '';
+  var redirect_txt = '';
 
   var lokal_name = urlParams.lokal[0]
   var lokal_page_id = urlParams.pageId[0] 
@@ -17,6 +105,9 @@ $(document).ready(function() {
   console.log(lokal_page_id)
 
   document.title = lokal_name;
+  
+
+  var local = lokal_name.toUpperCase()
 
   
 //   FOR edit view per lokal 
@@ -29,7 +120,7 @@ $(document).ready(function() {
       
       different_link = data.jsonData[lokal_page_id-1].different_link_per_data;
       different_img = data.jsonData[lokal_page_id-1].different_img_per_data;
-      $redirect_txt = data.jsonData[lokal_page_id-1].redirect_text;
+      redirect_txt = data.jsonData[lokal_page_id-1].redirect_text;
 
       // SET LINK from json
       
@@ -49,7 +140,7 @@ $(document).ready(function() {
       data.jsonData[lokal_page_id-1].viewData.forEach(setViews);  
 
       function setViews(item, index) {  
-        if(lokal_name == item.lokal){ 
+        if(lokal_name == item.lokal){  
           $('.lokal_view').text(item.views) 
           $('.lokal_name').text(item.lokal) 
           array_duration = item.duration.split(":");
@@ -103,8 +194,10 @@ $('.post-btn').click(function() {
      $( "#hidden-link" ).trigger( "click" );
      document.getElementById('hidden-link').click();
 
-    setInterval(function()
+     setTimeout(function()
     {   
+        console.log('done')
+        SelectData();
         $('.load-end').text('DONE ! Please wait your view to be update by Google Team ')
         $.LoadingOverlay("hide", true); //remmove the loading overlay
         $('.instruction-note').hide();
@@ -170,8 +263,8 @@ function updateWaitingText(mins,secs){
     //  $('.load-start').text('Sending view')
       // $('.lokal_view').text(data.jsonData[lokal_page_id-1].redirect_text)
     
-      $('.load-start').text($redirect_txt) 
-    setInterval(function()
+      $('.load-start').text(redirect_txt) 
+    setTimeout(function()
     { 
         
         $('.load-start').text('Uploading data from Google Firebase')
@@ -198,6 +291,136 @@ function updateWaitingText(mins,secs){
         // 5 minutes = 300000
         // 10 min = 600000  
   }
+
+  
+  // ============================== FIREBASE FUNCTIONS =============================
+
+  // SELECT DATA FUNCTION
+        function SelectData(){
+            const dbref = ref(db);
+
+            
+            let localInsert = checkValidArg(arrNonValidPath, local) 
+
+            get(child(dbref,"Views/"+date+"/"+localInsert)).then( (snapshot) => { 
+                if(snapshot.exists()){  
+                    // alert(snapshot.val().count)
+                    
+                    UpdateData(snapshot.val().count, localInsert)
+                }else{
+                    // alert("No Data Found") 
+                    checkDayData()
+                }
+            }).catch( (error) =>{
+                alert("Unssuccessful, error "+error) 
+            })
+            
+        }
+
+        function checkDayData(){
+            
+            const dbref = ref(db);
+
+            
+            get(child(dbref,"Views/"+date)).then( (snapshot) => { 
+                if(snapshot.exists()){  
+                    // if its not a new day but local is not found 
+                    
+                    let localInsert = checkValidArg(arrNonValidPath, local)
+                    InsertData(localInsert, 1)
+                    
+                    
+                }else{
+                    // if it is a new day, reinitialize data
+                    reinitializeData()
+                    SelectData()
+                                        
+                    // alert("No Data Found")
+                }
+            }).catch( (error) =>{
+                alert("Unssuccessful, error "+error) 
+            })
+
+        }
+
+        function reinitializeData(){
+
+            arr.forEach((arrVal) => {
+                // console.log(arrVal)
+
+                 
+                var arrVal = checkValidArg(arrNonValidPath, arrVal)
+                InsertData(arrVal, 0) 
+                // console.log(arrVal);
+            })
+
+        }
+
+        
+        // INSERT DATA FUNCTION
+
+        function InsertData(localName, countval){
+            set(ref(db, "Views/"+date+"/"+localName),{
+                name: localName,
+                count: countval
+            })
+            .then( ()=> {
+                // alert("Data stored successfully")
+            })
+            .catch( (error) =>{
+                alert("Unssuccessful, error "+error) 
+            });
+        }
+
+        
+        // UPDATE DATA FNCTION
+        
+        function UpdateData(val,localName){
+            // const dbref = ref(db);
+
+            
+            update(ref(db,"Views/"+date+"/"+localName),{
+                name: localName,
+                count: val+1 
+                 
+            })
+            .then( ()=> {
+                // alert("Data updated successfully")
+            })
+            .catch( (error) =>{
+                alert("Unssuccessful, error "+error) 
+            });
+        }
+
+        // window.onload = SelectData;
+
+        function checkValidArg(arrNonValidPath, arrVal){
+            
+            var result = arrNonValidPath.filter(x => arrVal.includes(x.type)  );
+            if(result.length >0){   
+                
+                // console.log(arrVal); 
+                result.forEach((x) => {
+                    arrVal = fixPathArgs(x,arrVal); 
+                })
+                
+            }
+
+            return arrVal;
+            
+        }
+
+
+        function fixPathArgs(arrResult, word){ 
+
+            let type =arrResult.type ;
+            // console.log(arrResult)
+            const regex = new RegExp(`[\\${type}]`, "g");  
+            word = word.replace(regex, arrResult.replace);
+
+            return word;
+ 
+        }
   
   
     
