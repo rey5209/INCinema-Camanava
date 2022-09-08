@@ -76,7 +76,7 @@ $(document).ready(function() {
           '    <td > '+
           '        <a href="'+(redirectPage == true? page+'?pageId='+count_page+'&lokal='+item.lokal : '#' )+'" class="lokals-item d-flex justify-content-between align-items-center" id="lokal_'+item.lokal+'">'+
           '          <div class="p-2 link-dark post-title">'+item.lokal+'</div> '+
-          '          <div class="p-2 link-dark view-counter '+item.lokal+'_view">'+item.views+'</div>'+
+          '          <div class="p-2 link-dark view-counter '+item.lokal+'_view">'+Math.round(item.views)+'</div>'+
           '        </a>'+
           '    </td>  '+
           '  </tr>  '+
@@ -101,7 +101,7 @@ $(document).ready(function() {
         '  <td >        '+
         '    <div class="lokals-item lokals-footer d-flex justify-content-between align-items-center">'+
         '      <h3 class="p-2 link-dark post-title text-danger">Total</h3> '+
-        '      <h3 class="p-2 link-dark view-counter text-danger total_view">'+total+'</h3>'+
+        '      <h3 class="p-2 link-dark view-counter text-danger total_view">'+Math.round(total)+'</h3>'+
         '    </div> '+
         '  </td>  '+
         '</tr>'+

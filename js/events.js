@@ -141,7 +141,7 @@ $(document).ready(function() {
 
       function setViews(item, index) {  
         if(lokal_name == item.lokal){  
-          $('.lokal_view').text(item.views) 
+          $('.lokal_view').text(Math.round(item.views)) 
           $('.lokal_name').text(item.lokal) 
           array_duration = item.duration.split(":");
           if(different_link)
