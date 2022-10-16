@@ -12,7 +12,6 @@
     "different_link_per_data" : false,
     "different_img_per_data" : false,
     "viewData" : [
-<<<<<<< HEAD
       {"lokal":"Bagbaguin",            "duration":"05:0",          "views": 2548.334303                        },
       {"lokal":"Balintawak",           "duration":"05:0",          "views": 821.7446344                      },
       {"lokal":"Caloocan",             "duration":"05:0",          "views": 631.4267006                          },
@@ -45,40 +44,6 @@
       {"lokal":"Tangos",               "duration":"05:0",          "views": 379.2175336                                    }, 
       {"lokal":"Tinajeros",            "duration":"05:0",          "views": 884.7697344                          }, 
       {"lokal":"Valenzuela",           "duration":"05:0",          "views": 733.6358676                          }
-=======
-      {"lokal":"Bagbaguin",            "duration":"05:0",          "views": 2548.334303                           },
-      {"lokal":"Balintawak",           "duration":"05:0",          "views": 821.7446344                         },
-      {"lokal":"Caloocan",             "duration":"05:0",          "views": 631.4267006                             },
-      {"lokal":"Catmon",               "duration":"05:0",          "views": 2966.426337                      },
-      {"lokal":"Gen. T. De Leon",      "duration":"05:0",          "views": 955.7948345                             },
-      {"lokal":"Gracepark",            "duration":"05:0",          "views": 630.4769007                        },
-      {"lokal":"Kalandang",            "duration":"05:0",          "views": 520.3932339                     },
-      {"lokal":"Karuhatan",            "duration":"05:0",          "views": 1018.886868             },
-      {"lokal":"Kaunlaran",            "duration":"05:0",          "views": 3846.497272                 }, 
-      {"lokal":"Kaunlaran 1",          "duration":"05:0",          "views": 351.259367          }, 
-      {"lokal":"Kaunlaran 3",          "duration":"05:0",          "views": 492.3932339                                }, 
-      {"lokal":"Kawal",                "duration":"05:0",          "views": 478.3597672                                 }, 
-      {"lokal":"Letre",                "duration":"05:0",          "views": 453.3430338                      }, 
-      {"lokal":"Lingunan",             "duration":"05:0",          "views": 457.2677337                       }, 
-      {"lokal":"M.H. Del Pilar",       "duration":"05:0",          "views": 202.1506002                         }, 
-      {"lokal":"Malabon",              "duration":"05:0",          "views": 489.4350673                     }, 
-      {"lokal":"Malinta",              "duration":"05:0",          "views": 980.8534012                     }, 
-      {"lokal":"Mapulang Lupa",        "duration":"05:0",          "views": 381.2844671                  }, 
-      {"lokal":"Maysan",               "duration":"05:0",          "views": 471.4016006                    }, 
-      {"lokal":"Naval",                "duration":"05:0",          "views": 744.5438341                             }, 
-      {"lokal":"Navotas",              "duration":"05:0",          "views": 440.4016006                       }, 
-      {"lokal":"North Diversion",      "duration":"05:0",          "views": 1660.255002                                   }, 
-      {"lokal":"Panghulo",             "duration":"05:0",          "views": 442.3597672                                     }, 
-      {"lokal":"Parada",               "duration":"05:0",          "views": 660.4183339                       }, 
-      {"lokal":"Polo",                 "duration":"05:0",          "views": 786.6609676                             }, 
-      {"lokal":"Sangandaan",           "duration":"05:0",          "views": 1364.251                       }, 
-      {"lokal":"Skyline",              "duration":"05:0",          "views": 651.5856675                 }, 
-      {"lokal":"Sta. Quiteria",        "duration":"05:0",          "views": 751.6860677                           }, 
-      {"lokal":"Tandang Sora",         "duration":"05:0",          "views": 550.4852674                                }, 
-      {"lokal":"Tangos",               "duration":"05:0",          "views": 379.2175336                                       }, 
-      {"lokal":"Tinajeros",            "duration":"05:0",          "views": 884.7697344                             }, 
-      {"lokal":"Valenzuela",           "duration":"05:0",          "views": 733.6358676                             }
->>>>>>> 0944a114ecda69609a2ba0ce4a54c8a3b96e4cec
         
      
         
